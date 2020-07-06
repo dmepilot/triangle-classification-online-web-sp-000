@@ -1,3 +1,21 @@
 class Triangle
-  # write code here
+  
+  attr_accessor :lengthA, :lengthB, :lengthC
+  
+  def initialize(lengthA, lengthB, lengthC)
+    @lengthA = lengthA
+    @lengthB = lengthB
+    @lengthC = lengthC
+  end
+  
+  def kind
+  if lengthA == lengthB && lengthB == lengthC
+    self.kind = :equilateral
+    elsif lengthA != lengthB && lengthB != lengthC && lengthA != lengthC
+    self.kind = :scalene
+    else
+      self.kind = :isosceles 
+    end
+  end
+  
 end
