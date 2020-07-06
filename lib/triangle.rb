@@ -10,11 +10,11 @@ class Triangle
   
   def kind
   if lengthA == lengthB && lengthB == lengthC
-    :equilateral = self
+    :equilateral 
     elsif lengthA != lengthB && lengthB != lengthC && lengthA != lengthC
-    :scalene = self
+    :scalene 
     else
-    :isosceles = self
+    :isosceles 
     end
   end
   
