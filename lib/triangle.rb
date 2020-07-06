@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind
-    if lengthA <= .01 || lengthB <= .01 || lengthC <= .01 
+    if lengthA <= 0.01 || lengthB <= 0.01 || lengthC <= 0.01 
       raise TriangleError
     elsif lengthA == lengthB && lengthB == lengthC
     :equilateral 
