@@ -9,7 +9,9 @@ class Triangle
   end
   
   def kind
-  if lengthA == lengthB && lengthB == lengthC
+    if :lengthA == 0 || lengthB == 0 || lengthC == 0 
+      raise TriangleError
+    elsif lengthA == lengthB && lengthB == lengthC
     :equilateral 
     elsif lengthA != lengthB && lengthB != lengthC && lengthA != lengthC
     :scalene 
