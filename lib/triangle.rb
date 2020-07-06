@@ -11,7 +11,7 @@ class Triangle
   def kind
     if lengthA <= 0 || lengthB <= 0 || lengthC <= 0 
       raise TriangleError
-      elsif lengthA + lengthB < lengthC
+      elsif lengthA + lengthB < lengthC || lengthA + lengthC < lengthB
       raise TriangleError
     elsif lengthA == lengthB && lengthB == lengthC
     :equilateral 
